@@ -31,3 +31,13 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+
+
+def box(length, height):
+    for x in range(height):
+        print("o"*length)
+
+
+x = int(input("Length?"))
+y = int(input("Height?"))
+box(x, y)
