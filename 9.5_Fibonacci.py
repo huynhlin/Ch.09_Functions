@@ -10,3 +10,16 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
+
+
+def fibonacci(endpoint):
+    numbers = [0, 1]
+    print(1)
+    for x in range(1, endpoint):
+        current_number = numbers[0] + numbers[1]
+        print("{:27,}".format(current_number))  # number to right of colon = right justify, the comma formats thousands
+        numbers[0] = numbers[1]
+        numbers[1] = current_number
+
+
+fibonacci(100)
