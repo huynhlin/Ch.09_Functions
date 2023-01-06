@@ -34,8 +34,8 @@ can be written in about four lines of code.
 
 
 def find(list, key):
-    position = 0
-    for number in range(len(list)):
+    position = -1
+    for number in list:
         position += 1
         if number == key:
             print("Found {} at position {}.".format(key, position))
