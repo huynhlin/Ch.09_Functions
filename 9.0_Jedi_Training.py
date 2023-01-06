@@ -9,7 +9,7 @@ def increase(number):
 
 
 num = int(input("Enter a number: "))
-increase(num)
+num = increase(num)
 print("Your number has been increased to", num)
                         
 
@@ -23,8 +23,8 @@ def count_to_ten():
 
 count_to_ten()
 
-
 #3.) Correct the following code to sum the list:
+
 
 def sum_list(list):
     total = 0
@@ -36,19 +36,17 @@ def sum_list(list):
 list = [45, 2, 10, -5, 100]
 print(sum_list(list))
 
-
-
-
 #4.) Correct the following code which should reverse the sentence that is entered.
+
 
 def reverse(text):
     result = ""
-    text_length = len(text)
-    for i in range(text_length):
-        result += text[i * -1]
+    for i in range(len(text)):
+        result += text[(i * -1) - 1]
     return result
+
  
-text = input("Enter a sentence: ")
+text = input("Enter a sentence to reverse: ")
 print(reverse(text))
 
 
@@ -67,7 +65,8 @@ def get_user_choice():
         print("s - Status")
         print("d - Drink")
         print("q - Quit")
- 
+
+
 user_command = get_user_choice()
 print("You entered:", user_command)
 
